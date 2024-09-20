@@ -6,11 +6,32 @@ This is a project for all homeworks for AQA Training 4.0
 
 1. Generate SSH key if you don't have one https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent 
 2. Add your newly created SSH key if you haven't added it yet https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account
-3. Install GitHub CLI ```brew install gh``` on your Mac
-4. Login into GitHub CLI ```gh auth login``` and follow all instructions (here is the example of how it should look) <br/><br/>
+
+## UI Easy Way
+1. Navigate to https://github.com/JavaTrainingFourthPhase/java-training-4.0
+2. In the right upper corner find button `Use this template` and click
+3. Complete next actions: <br/>
+   a. Select `Include all branches` <br/>
+   b. Choose your `Owner` <br/>
+   c. Paste repository name (can be the same as in original `java-training-4.0`) <br/>
+   d. Make repo public <br/> 
+   e. Click button `Create repository` <br/>
+   f. Navigate to your own account and find your new repository :tada: <br/>
+   g. :warning: **Do not forget to clone your new repo into local storage!**
+   ```
+   mkdir Git 
+   cd Git
+   git clone git@github.com:<your username>/java-training-4.0.git
+   ```
+<img width="834" alt="image" src="https://github.com/user-attachments/assets/cbfd1e96-29eb-4099-a9db-89c480a484b5"> <br/>
+
+
+## For those who'd like some spicy solutions
+1. Install GitHub CLI ```brew install gh``` on your Mac
+2. Login into GitHub CLI ```gh auth login``` and follow all instructions (here is the example of how it should look) <br/><br/>
 <img width="762" alt="image" src="https://github.com/user-attachments/assets/ace9f093-e4e0-4292-afcd-6f5ddd108ef4"> <br/><br/>
-5. Navigate to the folder where you would like to store repo locally
-6. Create your own repo from template via command ```gh repo create java-training-4.0 --public --template https://github.com/GreatIrrOrg/java-training-4.0.git --include-all-branches --clone```
+3. Navigate to the folder where you would like to store repo locally
+4. Create your own repo from template via command ```gh repo create java-training-4.0 --public --template https://github.com/JavaTrainingFourthPhase/java-training-4.0.git --include-all-branches --clone```
 
 ## GitHub actions
 
