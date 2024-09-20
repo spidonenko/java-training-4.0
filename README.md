@@ -9,7 +9,7 @@ This is a project for all homeworks for AQA Training 4.0
 3. Install GitHub CLI ```brew install gh``` on your Mac
 4. Login into GitHub CLI ```gh auth login``` and follow all instructions (here is the example of how it should look) <br/><br/>
 <img width="762" alt="image" src="https://github.com/user-attachments/assets/ace9f093-e4e0-4292-afcd-6f5ddd108ef4"> <br/><br/>
-5. Naviagate to the folder where you would like to store repo locally
+5. Navigate to the folder where you would like to store repo locally
 6. Create your own repo from template via command ```gh repo create java-training-4.0 --public --template https://github.com/GreatIrrOrg/java-training-4.0.git --include-all-branches --clone```
 
 ## GitHub actions
