@@ -24,7 +24,8 @@ This is a project for all homeworks for AQA Training 4.0
 
 1. Checkout corresponding branch for the homework
 2. In case if you see that classes are marked with red dot <img width="302" alt="image" src="https://github.com/user-attachments/assets/336e14f1-9bc2-44fb-9790-5153fe9f1558">
-   click on `src` folder and mark it as a `Sources Root` <img width="617" alt="image" src="https://github.com/user-attachments/assets/66a2dae2-f99f-4cbf-9139-44aacacfb634">
+   click on **`src`** folder
+   and mark it as a **`Sources Root`** <img width="617" alt="image" src="https://github.com/user-attachments/assets/66a2dae2-f99f-4cbf-9139-44aacacfb634">
 4. Read README.md file for the homework task
 5. Open test class, put your cursor on `@Test` annotation, press `Alt+Enter`
    and choose `Add 'testng' to classpath`.
