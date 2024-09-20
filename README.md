@@ -7,13 +7,14 @@ This is a project for all homeworks for AQA Training 4.0
 1. Create a new repo under your account with the same naming ```java-basics-training-4.0```
 2. Clone original repo
     ```git clone git@github.com:GreatIrrOrg/java-basics-training-4.0.git```
-3. Change origin url of your local repo
+3. Locally get inside new created folder ```cd java-basics-training-4.0```
+4. Change origin url of your local repo
     ```git remote set-url origin git@github.com:<your-github-name>/java-basics-training-4.0.git```
-4. Push changes
+5. Push changes
    ```git push --mirror git@github.com:<your-github-name>/java-basics-training-4.0.git```
-5. Check out that your local repo has correct origin remote
+6. Check out that your local repo has correct origin remote
    ```git remote show origin``` - should contain Fetch URL and Push URL to your own remote repo
-6. Check out that homework branches exists:
+7. Check out that homework branches exists:
    ```git branch -r```
 
 ## IntelliJ IDEA project configuration
