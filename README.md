@@ -6,9 +6,9 @@ This is a project for all homeworks for AQA Training 4.0
 
 1. Create a new repo under your account with the same naming ```java-basics-training-4.0```
 2. Clone original repo
-    ```git clone 'https://github.com/GreatIrrOrg/java-basics-training-4.0.git'```
+    ```git clone git@github.com:GreatIrrOrg/java-basics-training-4.0.git```
 3. Change origin url of your local repo
-    ```git remote set-url origin 'https://github.com/<your-github-name>/java-basics-training-4.0.git'```
+    ```git remote set-url origin git@github.com:<your-github-name>/java-basics-training-4.0.git```
 4. Push changes
    ```git push --mirror git@github.com:<your-github-name>/java-basics-training-4.0.git```
 
