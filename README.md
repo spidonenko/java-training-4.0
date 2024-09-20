@@ -8,9 +8,9 @@ This is a project for all homeworks for AQA Training 4.0
 2. Clone original repo
     ```git clone 'https://github.com/GreatIrrOrg/java-basics-training-4.0.git'```
 3. Change origin url of your local repo
-    ```git remote set-url origin "https://github.com/<your-github-name>/java-basics-training-4.0.git"```
+    ```git remote set-url origin 'https://github.com/<your-github-name>/java-basics-training-4.0.git'```
 4. Push changes
-   ```git push```
+   ```git push --mirror public```
 
 ## IntelliJ IDEA project configuration
 1. Import in IntelliJ IDEA using `File -> New -> Project from Existing Sources...`.
