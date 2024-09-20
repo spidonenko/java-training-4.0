@@ -2,20 +2,18 @@
 
 This is a project for all homeworks for AQA Training 4.0
 
-## Git Hub actions
+## Local Settings
 
-1. Create a new repo under your account with the same naming ```java-basics-training-4.0```
-2. Clone original repo
-    ```git clone git@github.com:GreatIrrOrg/java-basics-training-4.0.git```
-3. Locally get inside new created folder ```cd java-basics-training-4.0```
-4. Change origin url of your local repo
-    ```git remote set-url origin git@github.com:<your-github-name>/java-basics-training-4.0.git```
-5. Push changes
-   ```git push --mirror git@github.com:<your-github-name>/java-basics-training-4.0.git```
-6. Check out that your local repo has correct origin remote
-   ```git remote show origin``` - should contain Fetch URL and Push URL to your own remote repo
-7. Check out that homework branches exists:
-   ```git branch -r```
+1. Generate SSH key if you don't have one https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent 
+2. Add your newly created SSH key if you haven't added it yet https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account
+3. Install GitHub CLI ```brew install gh``` on your Mac
+4. Login into GitHub CLI ```gh auth login``` and follow all instructions (here is the example of how it should look) <br/>
+<img width="762" alt="image" src="https://github.com/user-attachments/assets/ace9f093-e4e0-4292-afcd-6f5ddd108ef4"> <br/><br/>
+5. Create your own repo from template via command ```gh repo create java-basics-training-4.0 --public --template https://github.com/GreatIrrOrg/java-basics-training-4.0.git --include-all-branches --clone```
+
+## GitHub actions
+
+1. Check that on your own account new repo was created with homework branches
 
 ## IntelliJ IDEA project configuration
 1. Import in IntelliJ IDEA using `File -> New -> Project from Existing Sources...`.
