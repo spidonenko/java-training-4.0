@@ -7,7 +7,7 @@ This is a project for all homeworks for AQA Training 4.0
 1. Generate SSH key if you don't have one https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent 
 2. Add your newly created SSH key if you haven't added it yet https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account
 3. Install GitHub CLI ```brew install gh``` on your Mac
-4. Login into GitHub CLI ```gh auth login``` and follow all instructions (here is the example of how it should look) <br/>
+4. Login into GitHub CLI ```gh auth login``` and follow all instructions (here is the example of how it should look) <br/><br/>
 <img width="762" alt="image" src="https://github.com/user-attachments/assets/ace9f093-e4e0-4292-afcd-6f5ddd108ef4"> <br/><br/>
 5. Create your own repo from template via command ```gh repo create java-basics-training-4.0 --public --template https://github.com/GreatIrrOrg/java-basics-training-4.0.git --include-all-branches --clone```
 
