@@ -9,15 +9,16 @@ This is a project for all homeworks for AQA Training 4.0
 
 ## UI Easy Way
 1. Navigate to https://github.com/JavaTrainingFourthPhase/java-training-4.0
-2. In the right upper corner find button `Use this template` and click
-3. Complete next actions: <br/>
+2. In the right upper corner find button `Use this template` and click it
+ <img width="1232" alt="image" src="https://github.com/user-attachments/assets/558a70c4-01c3-477f-8014-80468fabff96"> <br/>
+3. On the opened page complete next actions: <br/>
    a. Select `Include all branches` <br/>
    b. Choose your `Owner` <br/>
-   c. Paste repository name (can be the same as in original `java-training-4.0`) <br/>
+   c. Paste repository name (can be the same as original `java-training-4.0`) <br/>
    d. Make repo public <br/> 
    e. Click button `Create repository` <br/>
    f. Navigate to your own account and find your new repository :tada: <br/>
-   g. :warning: **Do not forget to clone your new repo into local storage!**
+   g. :warning: **Do not forget to clone your own new repo!**
    ```
    mkdir Git 
    cd Git
@@ -26,16 +27,12 @@ This is a project for all homeworks for AQA Training 4.0
 <img width="834" alt="image" src="https://github.com/user-attachments/assets/cbfd1e96-29eb-4099-a9db-89c480a484b5"> <br/>
 
 
-## For those who'd like some spicy solutions
+## For those who like some spicy solutions
 1. Install GitHub CLI ```brew install gh``` on your Mac
 2. Login into GitHub CLI ```gh auth login``` and follow all instructions (here is the example of how it should look) <br/><br/>
 <img width="762" alt="image" src="https://github.com/user-attachments/assets/ace9f093-e4e0-4292-afcd-6f5ddd108ef4"> <br/><br/>
 3. Navigate to the folder where you would like to store repo locally
 4. Create your own repo from template via command ```gh repo create java-training-4.0 --public --template https://github.com/JavaTrainingFourthPhase/java-training-4.0.git --include-all-branches --clone```
-
-## GitHub actions
-
-1. Check that on your own account new repo was created with homework branches
 
 ## IntelliJ IDEA project configuration
 1. Import in IntelliJ IDEA using `File -> New -> Project from Existing Sources...`.
@@ -48,8 +45,8 @@ This is a project for all homeworks for AQA Training 4.0
 ## Homework 
 
 1. Checkout corresponding branch for the homework
-2. In case if you see that classes are marked with red dot <br/> <img width="302" alt="image" src="https://github.com/user-attachments/assets/336e14f1-9bc2-44fb-9790-5153fe9f1558"> <br/>
-   click on **`src`** folder and mark it as a **`Sources Root`** <br/>
+2. In case if you see that classes are marked with red dot <img width="302" alt="image" src="https://github.com/user-attachments/assets/336e14f1-9bc2-44fb-9790-5153fe9f1558"> <br/>
+   :arrow_right: click on **`src`** folder and mark it as a **`Sources Root`** <br/>
     <img width="617" alt="image" src="https://github.com/user-attachments/assets/66a2dae2-f99f-4cbf-9139-44aacacfb634">
 3. Read README.md file for the homework task
 4. Open test class, put your cursor on `@Test` annotation, press `Alt+Enter`
