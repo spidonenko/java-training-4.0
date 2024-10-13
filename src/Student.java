@@ -1,10 +1,6 @@
-import java.util.ArrayList;
-import java.util.List;
-
 public class Student {
     private int rating;
     private String name;
-    private static final List<Student> students = new ArrayList<>();
 
     public Student() {
         this("J. Doe");
@@ -17,22 +13,11 @@ public class Student {
     public Student(String name, int rating) {
         this.name = name;
         this.rating = rating;
-        students.add(this);
-    }
-
-    // runs on destruction
-    @Override
-    protected void finalize() {
-        students.remove(this);
     }
 
     public static double getAvgRating() {
-        if (students == null || students.isEmpty()) { return 0d; }
-        double sum = 0;
-        for (var i : students) {
-            sum += i.getRating();
-        }
-        return sum / students.size();
+        // using off-the-shelf methods to get an average value of a set
+        return StudentsDB.getAll().stream().mapToInt(i -> i.getRating()).average().orElse(0);
     }
 
     public String getName() {
@@ -60,7 +45,7 @@ public class Student {
     }
 
     public static void removeStudent(Student student) {
-        student.finalize();
+        StudentsDB.remove(student);
     }
 
     @Override

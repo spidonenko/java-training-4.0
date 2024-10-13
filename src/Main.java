@@ -1,6 +1,3 @@
-import java.util.ArrayList;
-import java.util.List;
-
 public class Main {
     public static void main(String[] args) {
 //        In the method main() create 3 objects of Student type
@@ -9,16 +6,19 @@ public class Main {
 //        Change the rating of any student.
 //        Display the new average rating.
 
-        List<Student> students = new ArrayList<>();
-        students.add(new Student("Anne", 15));
-        students.add(new Student("Bob", 10));
-        students.add(new Student("Chuck", 20));
+        var st1 = new Student("Anne", 15);
+        StudentsDB.add(st1);
+        var st2 = new Student("Bob", 10);
+        StudentsDB.add(st2);
+        var st3 =  new Student("Chuck", 20);
+        StudentsDB.add(st3);
 
         System.out.printf("Average rating of the students is %s%n", Student.getAvgRating());
         System.out.println("Changing some ratings");
-        students.get(0).changeRating(30);
-        students.get(1).changeRating(15);
-        students.forEach(i -> { System.out.println(i); });
+        st1.changeRating(30);
+        st2.changeRating(15);
+        StudentsDB.getAll().forEach(i -> System.out.println(i));
         System.out.printf("Average rating of the students is %#.2f%n", Student.getAvgRating());
+        StudentsDB.clear();
     }
 }

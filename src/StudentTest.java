@@ -7,7 +7,10 @@ import java.util.List;
 import static org.testng.Assert.*;
 
 public class StudentTest {
-    List<Student> students = new ArrayList<>();
+    // using StudentsDB as a catalog
+    //  so a Student can access it
+    //      and estimate average rating in getAvgRating
+    StudentsDB students = new StudentsDB();
 
     @Test
     public void testGetAvgRating() {
@@ -137,7 +140,8 @@ public class StudentTest {
 
     @AfterMethod
     public void tearDown() {
-        students.forEach(Student :: removeStudent);
+        // students.forEach(Student :: removeStudent);
+        // it's sufficient to clear the catalog
         students.clear();
     }
 }
