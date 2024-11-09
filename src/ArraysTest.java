@@ -22,8 +22,17 @@ public class ArraysTest {
                         new String[]{"here", "is", "some", "text", ".", "text"},
                         new String[]{"some", "text", "above", "."},
                         new String[]{"some", "text", "."}
-                }
+                },
                 // TODO add 2 more test data here
+                {
+                        new String[]{"unique_str1", "unique_str2", "same_str1", "same_str2", "same_str1", "unique_str4"},
+                        new String[]{"unique_str2", "same_str2", "same_str1", "unique_str3", "same_str2"},
+                        new String[]{"unique_str2", "same_str1", "same_str2"}
+                },{
+                        new String[]{"empty", "array", "as", "an argument", "produces", "no errors"},
+                        new String[]{},
+                        new String[]{}
+                }
         };
     }
 
