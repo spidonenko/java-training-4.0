@@ -1,8 +1,7 @@
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import static java.lang.Double.NaN;
-import static java.lang.Double.POSITIVE_INFINITY;
+import static java.lang.Double.*;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
@@ -15,8 +14,10 @@ public class LambdaTest {
                 {-1.0, 10.0, 10.0},
                 {0.0, 0.0, 0.0},
                 {-10.0, NaN, NaN},
-                {POSITIVE_INFINITY, 1e32, POSITIVE_INFINITY}
+                {POSITIVE_INFINITY, 1e32, POSITIVE_INFINITY},
                 // TODO add 2 more test data here
+                {NEGATIVE_INFINITY, POSITIVE_INFINITY, POSITIVE_INFINITY},
+                {1.2-0.9 /* <0.3 */, 1-0.7 /* >0.3 */,  1-0.7}, // some fun binary subtraction
         };
     }
 
@@ -25,8 +26,10 @@ public class LambdaTest {
         return new Object[][]{
                 {25.0, 5.0},
                 {-1.0, NaN},
-                {POSITIVE_INFINITY, POSITIVE_INFINITY}
+                {POSITIVE_INFINITY, POSITIVE_INFINITY},
                 // TODO add 2 more test data here
+                {NEGATIVE_INFINITY, NaN},
+                {0d, 0d}
         };
     }
 
@@ -45,10 +48,10 @@ public class LambdaTest {
     public void testSqrt(Double a, Double b) {
         assertEquals(Lambda.getSqrt().apply(a), b, "Square root is incorrect");
 
-        assertTrue(Lambda.getMax().getClass().getGenericInterfaces().length > 0,
+        assertTrue(Lambda.getSqrt().getClass().getGenericInterfaces().length > 0,
                 "getMax method should return Generic Functional Interface");
 
-        assertTrue(Lambda.getMax().getClass().getGenericInterfaces()[0].getTypeName().contains("Function"),
+        assertTrue(Lambda.getSqrt().getClass().getGenericInterfaces()[0].getTypeName().contains("Function"),
                 "getMax method should return Functional interface");
     }
 }
