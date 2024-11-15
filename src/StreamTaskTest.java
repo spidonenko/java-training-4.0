@@ -19,8 +19,16 @@ public class StreamTaskTest {
                 {
                         new int[]{13, -2, 33, -4, 5},
                         20
-                }
+                },
                 // TODO add 2 more test data here
+                {
+                        new int[]{-10, 1, 2, 3, 4, 5, 6, 7, 9, 10},
+                        256
+                },
+                {   // empty array - no errors
+                        new int[]{},
+                        0
+                }
         };
     }
 
@@ -38,8 +46,16 @@ public class StreamTaskTest {
                 {
                         new int[]{130, -200, 330, -40, 50, 66},
                         new int[]{}
-                }
+                },
                 // TODO add 2 more test data here
+                {   // duplicated elements
+                        new int[]{5, -3, 11, -5, 1, 4, 3, 5, 2, 5, -3, 11, -5, 1, 4, 3, 5, 2},
+                        new int[]{-5, -5, -3, -3, 1, 1, 3, 3, 5, 5, 5, 5, 11, 11}
+                },
+                {   // empty array - no errors
+                        new int[]{},
+                        new int[]{}
+                }
         };
     }
 
