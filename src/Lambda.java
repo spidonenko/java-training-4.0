@@ -20,6 +20,6 @@ public class Lambda {
      */
     public static Function<Double, Double> getSqrt() {
         // TODO replace null with method reference
-        return (x) -> Math.sqrt(x);
+        return Math::sqrt;
     }
 }
