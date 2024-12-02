@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="suite-gamma">
+    <test name="Test with parameters from XML">
+        <parameter name="login" value="test_user"/>
+        <parameter name="password" value="*********"/>
+        <classes>
+            <class name="example.TestClassTwo" />
+        </classes>
+    </test>
+</suite>

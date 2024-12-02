@@ -1,6 +1,8 @@
 plugins {
     id 'java'
+    id 'application'
 }
+mainClassName = 'example.BasicClass'
 
 version = '1.0-SNAPSHOT'
 
@@ -10,8 +12,21 @@ repositories {
 
 dependencies {
     //add testng dependency
+    testImplementation 'org.testng:testng:7.9.0'
 }
 
 test {
-    useTestNG()
+    useTestNG() {
+        // 3.2 excluding one of them from test execution
+        excludeGroups 'group-C'
+    }
+    testLogging.showStandardStreams = true
+}
+
+task test_gamma(type: Test) {
+    useTestNG() {
+        suites 'testng.xml'
+        includeGroups('group-gamma')
+    }
+    testLogging.showStandardStreams = true
 }
